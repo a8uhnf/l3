@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: l3
+  namespace: location
+  annotations:
+    "service/owner": "a8u.han1fa@gmail.com"
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+  selector:
+    app: l3
+  type: ClusterIP
