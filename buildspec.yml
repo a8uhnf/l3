@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - go --version
+      - go version
       - go build ./cmd/main.go
 artifacts:
   files:
