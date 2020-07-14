@@ -4,9 +4,10 @@ phases:
   build:
     commands:
       - go version
-      - go build ./cmd/main.go
+      - go build -o ./bin/l3 ./cmd/main.go
       - pwd
+      - ls -la
 artifacts:
   files:
-    - '**/*'
-  base-directory: 'src'
+    - './bin/l3'
+  base-directory: '/src'
