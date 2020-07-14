@@ -5,6 +5,7 @@ phases:
     commands:
       - go version
       - go build ./cmd/main.go
+      - pwd
 artifacts:
   files:
     - '**/*'
