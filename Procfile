@@ -1,1 +1,1 @@
-web: "bin/myserver serve"
+web: "bin/l3 serve"
